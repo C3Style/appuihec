@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background:url(../../images/body_bg_pink.png) repeat-x #eee;
+}
+a {
+	color:#ef007c;
+}
+a:focus, a:hover {
+	color:#ff5db1;
+}
+#header {
+	background:url(../../images/header_bg_pink.jpg) no-repeat;
+}
+.categories-list li .item-title, .cat-children .item-title {
+	border-left:3px solid #ef007c;
+	border-bottom:2px solid #ef007c;
+
+}
+
+.readmore {
+	border-left:3px solid #ef007c;
+}

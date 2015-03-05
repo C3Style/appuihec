@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Icomoon</title>
+
+<script type="text/javascript">
+
+
+function changeFontSize(n) {
+
+	var fontsizemin=10;
+	var fontsizemax=72;
+	var multiplier = 1;
+	var p = document.getElementsByTagName('i');
+	
+	for(i=0;i<p.length;i++) {
+ 
+		if(p[i].style.fontSize) {
+			var s = parseInt(p[i].style.fontSize.replace("px",""));
+		} else {
+			var s = 14;
+		}
+		
+		if( (s <= fontsizemax) || (s >= fontsizemin) ) {
+			s = s + (multiplier * n);
+		} else {
+			s = 14;
+		}
+				
+		p[i].style.fontSize = s+"px";
+	}
+	setFontsize(s);
+	
+}
+
+var fontsize=14;
+function setFontsize(s) { fontsize = s; }
+function getFontsize() { 
+	if(fontsize=="" || !fontsize) fontsize=14;
+	return " size"+fontsize; 
+}
+
+// window.parent.jInsertEditorText(tag, 'text'); // joomla core function tinymce
+// window.parent.tinyMCE.execCommand('mceInsertContent',false, tag); // using tinymce api
+function insertFonticons1(){var tag="<i class=\"icon1-home"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons2(){var tag="<i class=\"icon1-pencil"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons3(){var tag="<i class=\"icon1-newspaper"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons4(){var tag="<i class=\"icon1-pencil-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons5(){var tag="<i class=\"icon1-droplet"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons6(){var tag="<i class=\"icon1-pictures"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons7(){var tag="<i class=\"icon1-picture"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons8(){var tag="<i class=\"icon1-camera"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons9(){var tag="<i class=\"icon1-music"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons10(){var tag="<i class=\"icon1-play"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons11(){var tag="<i class=\"icon1-film"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons12(){var tag="<i class=\"icon1-camera-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons13(){var tag="<i class=\"icon1-spades"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons14(){var tag="<i class=\"icon1-basket"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons15(){var tag="<i class=\"icon1-cart"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons16(){var tag="<i class=\"icon1-tag"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons17(){var tag="<i class=\"icon1-folder"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons18(){var tag="<i class=\"icon1-folder-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons19(){var tag="<i class=\"icon1-copy"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons20(){var tag="<i class=\"icon1-new"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons21(){var tag="<i class=\"icon1-file"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons22(){var tag="<i class=\"icon1-file-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons23(){var tag="<i class=\"icon1-book"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons24(){var tag="<i class=\"icon1-mic"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons25(){var tag="<i class=\"icon1-broadcast"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons26(){var tag="<i class=\"icon1-diamonds"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons27(){var tag="<i class=\"icon1-clubs"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons28(){var tag="<i class=\"icon1-calculate"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons29(){var tag="<i class=\"icon1-support"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons30(){var tag="<i class=\"icon1-phone"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons31(){var tag="<i class=\"icon1-mail"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons32(){var tag="<i class=\"icon1-location"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons33(){var tag="<i class=\"icon1-compass"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons34(){var tag="<i class=\"icon1-clock"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons35(){var tag="<i class=\"icon1-history"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons36(){var tag="<i class=\"icon1-bell"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons37(){var tag="<i class=\"icon1-calendar"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons38(){var tag="<i class=\"icon1-printer"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons39(){var tag="<i class=\"icon1-mouse"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons40(){var tag="<i class=\"icon1-screen"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons41(){var tag="<i class=\"icon1-laptop"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons42(){var tag="<i class=\"icon1-redo"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons43(){var tag="<i class=\"icon1-undo"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons44(){var tag="<i class=\"icon1-flip"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons45(){var tag="<i class=\"icon1-flip-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons46(){var tag="<i class=\"icon1-database"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons47(){var tag="<i class=\"icon1-upload"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons48(){var tag="<i class=\"icon1-download"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons49(){var tag="<i class=\"icon1-box-remove"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons50(){var tag="<i class=\"icon1-box-add"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons51(){var tag="<i class=\"icon1-box"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons52(){var tag="<i class=\"icon1-drawer"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons53(){var tag="<i class=\"icon1-drawer-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons54(){var tag="<i class=\"icon1-cabinet"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons55(){var tag="<i class=\"icon1-mobile"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons56(){var tag="<i class=\"icon1-forward"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons57(){var tag="<i class=\"icon1-reply"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons58(){var tag="<i class=\"icon1-reply-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons59(){var tag="<i class=\"icon1-comments"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons60(){var tag="<i class=\"icon1-comments-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons61(){var tag="<i class=\"icon1-comments-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons62(){var tag="<i class=\"icon1-comments-4"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons63(){var tag="<i class=\"icon1-comments-5"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons64(){var tag="<i class=\"icon1-user"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons65(){var tag="<i class=\"icon1-user-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons66(){var tag="<i class=\"icon1-user-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons67(){var tag="<i class=\"icon1-busy"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons68(){var tag="<i class=\"icon1-loading"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons69(){var tag="<i class=\"icon1-loading-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons70(){var tag="<i class=\"icon1-gift"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons71(){var tag="<i class=\"icon1-stats-up"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons72(){var tag="<i class=\"icon1-bars"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons73(){var tag="<i class=\"icon1-cog"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons74(){var tag="<i class=\"icon1-pie"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons75(){var tag="<i class=\"icon1-equalizer"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons76(){var tag="<i class=\"icon1-wrench"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons77(){var tag="<i class=\"icon1-unlocked"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons78(){var tag="<i class=\"icon1-locked"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons79(){var tag="<i class=\"icon1-key"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons80(){var tag="<i class=\"icon1-key-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons81(){var tag="<i class=\"icon1-zoom-in"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons82(){var tag="<i class=\"icon1-zoom-out"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons83(){var tag="<i class=\"icon1-search"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons84(){var tag="<i class=\"icon1-trophy"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons85(){var tag="<i class=\"icon1-diamond"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons86(){var tag="<i class=\"icon1-coffee"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons87(){var tag="<i class=\"icon1-rocket"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons88(){var tag="<i class=\"icon1-meter-slow"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons89(){var tag="<i class=\"icon1-meter-medium"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons90(){var tag="<i class=\"icon1-meter-fast"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons91(){var tag="<i class=\"icon1-dashboard"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons92(){var tag="<i class=\"icon1-fire"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons93(){var tag="<i class=\"icon1-lab"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons94(){var tag="<i class=\"icon1-remove"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons95(){var tag="<i class=\"icon1-remove-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons96(){var tag="<i class=\"icon1-remove-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons97(){var tag="<i class=\"icon1-briefcase"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons98(){var tag="<i class=\"icon1-power"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons99(){var tag="<i class=\"icon1-lightning"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons100(){var tag="<i class=\"icon1-target"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons101(){var tag="<i class=\"icon1-target-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons102(){var tag="<i class=\"icon1-accessibility"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons103(){var tag="<i class=\"icon1-accessibility-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons104(){var tag="<i class=\"icon1-glasses"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons105(){var tag="<i class=\"icon1-glasses-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons106(){var tag="<i class=\"icon1-cube"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons107(){var tag="<i class=\"icon1-puzzle"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons108(){var tag="<i class=\"icon1-cube-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons109(){var tag="<i class=\"icon1-bus"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons110(){var tag="<i class=\"icon1-cars"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons111(){var tag="<i class=\"icon1-briefcase-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons112(){var tag="<i class=\"icon1-power-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons113(){var tag="<i class=\"icon1-clipboard"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons114(){var tag="<i class=\"icon1-clipboard-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons115(){var tag="<i class=\"icon1-playlist"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons116(){var tag="<i class=\"icon1-grid-view"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons117(){var tag="<i class=\"icon1-tree-view"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons118(){var tag="<i class=\"icon1-cloud"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons119(){var tag="<i class=\"icon1-cloud-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons120(){var tag="<i class=\"icon1-download-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons121(){var tag="<i class=\"icon1-upload-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons122(){var tag="<i class=\"icon1-upload-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons123(){var tag="<i class=\"icon1-link"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons124(){var tag="<i class=\"icon1-link-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons125(){var tag="<i class=\"icon1-flag"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons126(){var tag="<i class=\"icon1-flag-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons127(){var tag="<i class=\"icon1-attachment"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons128(){var tag="<i class=\"icon1-eye"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons129(){var tag="<i class=\"icon1-eye-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons130(){var tag="<i class=\"icon1-bookmark"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons131(){var tag="<i class=\"icon1-bookmark-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons132(){var tag="<i class=\"icon1-star"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons133(){var tag="<i class=\"icon1-star-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons134(){var tag="<i class=\"icon1-star-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons135(){var tag="<i class=\"icon1-heart"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons136(){var tag="<i class=\"icon1-heart-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons137(){var tag="<i class=\"icon1-thumbs-up"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons138(){var tag="<i class=\"icon1-thumbs-down"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons139(){var tag="<i class=\"icon1-happy"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons140(){var tag="<i class=\"icon1-exit"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons141(){var tag="<i class=\"icon1-enter"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons142(){var tag="<i class=\"icon1-plus"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons143(){var tag="<i class=\"icon1-minus"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons144(){var tag="<i class=\"icon1-checkmark"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons145(){var tag="<i class=\"icon1-cancel"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons146(){var tag="<i class=\"icon1-blocked"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons147(){var tag="<i class=\"icon1-cancel-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons148(){var tag="<i class=\"icon1-help"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons149(){var tag="<i class=\"icon1-help-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons150(){var tag="<i class=\"icon1-minus-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons151(){var tag="<i class=\"icon1-plus-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons152(){var tag="<i class=\"icon1-smiley"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons153(){var tag="<i class=\"icon1-neutral"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons154(){var tag="<i class=\"icon1-loop"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons155(){var tag="<i class=\"icon1-arrow-up-left"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons156(){var tag="<i class=\"icon1-arrow-up"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons157(){var tag="<i class=\"icon1-arrow-up-right"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons158(){var tag="<i class=\"icon1-arrow-right"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons159(){var tag="<i class=\"icon1-arrow-down-right"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons160(){var tag="<i class=\"icon1-arrow-down"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons161(){var tag="<i class=\"icon1-arrow-down-left"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons162(){var tag="<i class=\"icon1-arrow-left"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons163(){var tag="<i class=\"icon1-arrow-up-left-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons164(){var tag="<i class=\"icon1-arrow-up-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons165(){var tag="<i class=\"icon1-arrow-up-right"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons166(){var tag="<i class=\"icon1-arrow-right-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons167(){var tag="<i class=\"icon1-arrow-down-right-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons168(){var tag="<i class=\"icon1-arrow-down-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons169(){var tag="<i class=\"icon1-arrow-right-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons170(){var tag="<i class=\"icon1-arrow-up-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons171(){var tag="<i class=\"icon1-arrow-left-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons172(){var tag="<i class=\"icon1-arrow-down-left"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons173(){var tag="<i class=\"icon1-arrow-down-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons174(){var tag="<i class=\"icon1-arrow-down-right"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons175(){var tag="<i class=\"icon1-arrow-right-4"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons176(){var tag="<i class=\"icon1-arrow-up-right"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons177(){var tag="<i class=\"icon1-arrow-up-4"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons178(){var tag="<i class=\"icon1-arrow-up-left-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons179(){var tag="<i class=\"icon1-arrow-left-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons180(){var tag="<i class=\"icon1-arrow-down-left"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons181(){var tag="<i class=\"icon1-arrow-down-4"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons182(){var tag="<i class=\"icon1-arrow-left-4"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons183(){var tag="<i class=\"icon1-arrow-up-5"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons184(){var tag="<i class=\"icon1-arrow-right-5"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons185(){var tag="<i class=\"icon1-arrow-down-5"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons186(){var tag="<i class=\"icon1-arrow-left-5"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons187(){var tag="<i class=\"icon1-arrow-up-6"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons188(){var tag="<i class=\"icon1-arrow-right-6"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons189(){var tag="<i class=\"icon1-arrow-down-6"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons190(){var tag="<i class=\"icon1-arrow-left-6"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons191(){var tag="<i class=\"icon1-menu"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons192(){var tag="<i class=\"icon1-enter-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons193(){var tag="<i class=\"icon1-backspace"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons194(){var tag="<i class=\"icon1-backspace-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons195(){var tag="<i class=\"icon1-tab"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons196(){var tag="<i class=\"icon1-right-to-left"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons197(){var tag="<i class=\"icon1-left-to-right"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons198(){var tag="<i class=\"icon1-share"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons199(){var tag="<i class=\"icon1-paragraph-justify"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons200(){var tag="<i class=\"icon1-paragraph-right"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons201(){var tag="<i class=\"icon1-paragraph-center"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons202(){var tag="<i class=\"icon1-paragraph-left"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons203(){var tag="<i class=\"icon1-font"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons204(){var tag="<i class=\"icon1-radio-unchecked"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons205(){var tag="<i class=\"icon1-radio-checked"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons206(){var tag="<i class=\"icon1-checkbox-partial"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons207(){var tag="<i class=\"icon1-checkbox-unchecked"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons208(){var tag="<i class=\"icon1-tab-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons209(){var tag="<i class=\"icon1-checkbox"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons210(){var tag="<i class=\"icon1-new-tab"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons211(){var tag="<i class=\"icon1-new-tab-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons212(){var tag="<i class=\"icon1-embed"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons213(){var tag="<i class=\"icon1-code"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons214(){var tag="<i class=\"icon1-bluetooth"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons215(){var tag="<i class=\"icon1-share-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons216(){var tag="<i class=\"icon1-share-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons217(){var tag="<i class=\"icon1-mail-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons218(){var tag="<i class=\"icon1-mail-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons219(){var tag="<i class=\"icon1-mail-4"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons220(){var tag="<i class=\"icon1-google"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons221(){var tag="<i class=\"icon1-google-plus"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons222(){var tag="<i class=\"icon1-google-plus-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons223(){var tag="<i class=\"icon1-google-plus-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons224(){var tag="<i class=\"icon1-youtube"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons225(){var tag="<i class=\"icon1-youtube-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons226(){var tag="<i class=\"icon1-feed"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons227(){var tag="<i class=\"icon1-feed-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons228(){var tag="<i class=\"icon1-twitter"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons229(){var tag="<i class=\"icon1-twitter-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons230(){var tag="<i class=\"icon1-twitter-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons231(){var tag="<i class=\"icon1-instagram"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons232(){var tag="<i class=\"icon1-facebook"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons233(){var tag="<i class=\"icon1-facebook-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons234(){var tag="<i class=\"icon1-facebook-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons235(){var tag="<i class=\"icon1-google-drive"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons236(){var tag="<i class=\"icon1-gplus"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons237(){var tag="<i class=\"icon1-vimeo"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons238(){var tag="<i class=\"icon1-vimeo-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons239(){var tag="<i class=\"icon1-flickr"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons240(){var tag="<i class=\"icon1-flickr-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons241(){var tag="<i class=\"icon1-flickr-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons242(){var tag="<i class=\"icon1-picassa"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons243(){var tag="<i class=\"icon1-picassa-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons244(){var tag="<i class=\"icon1-dribbble"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons245(){var tag="<i class=\"icon1-dribbble-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons246(){var tag="<i class=\"icon1-dribbble-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons247(){var tag="<i class=\"icon1-forrst"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons248(){var tag="<i class=\"icon1-forrst-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons249(){var tag="<i class=\"icon1-deviantart"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons250(){var tag="<i class=\"icon1-feed-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons251(){var tag="<i class=\"icon1-deviantart-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons252(){var tag="<i class=\"icon1-tumblr"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons253(){var tag="<i class=\"icon1-blogger"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons254(){var tag="<i class=\"icon1-blogger-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons255(){var tag="<i class=\"icon1-joomla"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons256(){var tag="<i class=\"icon1-wordpress"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons257(){var tag="<i class=\"icon1-wordpress-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons258(){var tag="<i class=\"icon1-github"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons259(){var tag="<i class=\"icon1-git"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons260(){var tag="<i class=\"icon1-github-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons261(){var tag="<i class=\"icon1-github-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons262(){var tag="<i class=\"icon1-github-4"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons263(){var tag="<i class=\"icon1-github-5"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons264(){var tag="<i class=\"icon1-github-6"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons265(){var tag="<i class=\"icon1-github-7"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons266(){var tag="<i class=\"icon1-tumblr-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons267(){var tag="<i class=\"icon1-yahoo"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons268(){var tag="<i class=\"icon1-yahoo-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons269(){var tag="<i class=\"icon1-amazon"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons270(){var tag="<i class=\"icon1-amazon-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons271(){var tag="<i class=\"icon1-tux"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons272(){var tag="<i class=\"icon1-apple"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons273(){var tag="<i class=\"icon1-finder"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons274(){var tag="<i class=\"icon1-android"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons275(){var tag="<i class=\"icon1-windows"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons276(){var tag="<i class=\"icon1-soundcloud"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons277(){var tag="<i class=\"icon1-soundcloud-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons278(){var tag="<i class=\"icon1-skype"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons279(){var tag="<i class=\"icon1-reddit"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons280(){var tag="<i class=\"icon1-foursquare"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons281(){var tag="<i class=\"icon1-flattr"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons282(){var tag="<i class=\"icon1-foursquare-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons283(){var tag="<i class=\"icon1-xing"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons284(){var tag="<i class=\"icon1-xing-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons285(){var tag="<i class=\"icon1-pinterest"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons286(){var tag="<i class=\"icon1-pinterest-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons287(){var tag="<i class=\"icon1-stumbleupon"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons288(){var tag="<i class=\"icon1-delicious"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons289(){var tag="<i class=\"icon1-stumbleupon-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons290(){var tag="<i class=\"icon1-lastfm"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons291(){var tag="<i class=\"icon1-lastfm-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons292(){var tag="<i class=\"icon1-linkedin"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons293(){var tag="<i class=\"icon1-linkedin-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons294(){var tag="<i class=\"icon1-paypal"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons295(){var tag="<i class=\"icon1-paypal-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons296(){var tag="<i class=\"icon1-paypal-3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons297(){var tag="<i class=\"icon1-yelp"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons298(){var tag="<i class=\"icon1-libreoffice"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons299(){var tag="<i class=\"icon1-file-pdf"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons300(){var tag="<i class=\"icon1-file-openoffic"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons301(){var tag="<i class=\"icon1-file-word"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons302(){var tag="<i class=\"icon1-file-excel"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons303(){var tag="<i class=\"icon1-file-powerpoin"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons304(){var tag="<i class=\"icon1-file-zip"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons305(){var tag="<i class=\"icon1-file-xml"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons306(){var tag="<i class=\"icon1-file-css"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons307(){var tag="<i class=\"icon1-html5"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons308(){var tag="<i class=\"icon1-IcoMoon"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons309(){var tag="<i class=\"icon1-safari"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons310(){var tag="<i class=\"icon1-opera"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons311(){var tag="<i class=\"icon1-IE"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons312(){var tag="<i class=\"icon1-firefox"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons313(){var tag="<i class=\"icon1-css3"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons314(){var tag="<i class=\"icon1-html5-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons315(){var tag="<i class=\"icon1-chrome"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+function insertFonticons316(){var tag="<i class=\"icon1-home-2"+getFontsize()+"\"></i>";window.parent.tinyMCE.execCommand('mceInsertContent',false, tag);window.parent.SqueezeBox.close();return false;}
+
+</script>
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<style type="text/css">
+.clearfix {
+  *zoom: 1;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.wrp {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+a {text-decoration: none;
+border: none;}
+img {border: none;}
+ul {display: block;}
+ul,li {margin: 0 auto; padding: 0!important;}
+.the-icons {
+  list-style: none outside none;
+  margin-left: 0;
+}
+.the-icons li {
+  font-size: 14px;
+  line-height: 24px;
+  height: 24px;
+    margin:8px 2px!important;
+    display: inline-block;
+}
+.the-icons button {
+  font-size: 14px;
+  border: 1px solid #fff;
+  background: #fff;
+  padding: 5px;
+  color: #333;
+  cursor: pointer;
+}
+.the-icons button:hover {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.clear {
+		clear: both;
+}
+.footer {
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 12px;
+		display: block;
+		margin: 0 auto;	
+		width: 90%;
+		padding: 20px 10px 10px 10px;
+		text-align:center;
+	}
+	.header {
+		border-bottom: 1px solid #eee;
+		margin: 0 0 10px 0;
+		padding: 0 0 10px 0;
+		text-align: left;
+		position: fixed;
+		background: #fff;
+		width: 100%;
+	}
+a.setting {display:inline-block;
+	width:32px;
+	height: 32px;
+	background: url(assets/setting.png) 0 0 no-repeat;
+	text-indent: -9999989px;
+	direction: ltr;
+	font-size: 12px;
+	opacity: 0.5;}
+	a.setting:hover {opacity: 1;}
+a.logo {
+	font-size: 12px;
+	display: inline-block;
+	width: 100px;
+	height: 32px;
+	background: url(assets/icomoon-logo.png) 0 0 ;
+	text-indent: -9999989px;
+	margin: 0 0 0 10px;
+	opacity: 0.8;
+}
+	a.logo:hover {
+		opacity: 1;
+	}
+.nodewrp {display: block;
+	height: 32px;
+	float: right;
+	padding: 6px 20px 0 0}
+.node {
+	display: inline-block;
+	background: #ccc;
+	border-radius: 20px;
+	height: 7px;
+	width: 7px;
+	text-indent: -99999px;
+	direction: ltr;
+	line-height: 32px;
+	margin: 10px 2px 0 2px;
+}
+	.node:hover,
+	.active {
+		background: #333;
+	}
+#fontsize {
+	display:inline-block;
+	float: right;
+	padding: 10px 10px 0 0;
+
+}
+	#fontsize a {display: inline-block;
+		background: #fff;
+		color: #333;
+		width: 18px;
+		height: 18px;
+		border-radius: 20px;
+		text-align: center;
+		font-size: 14px;
+		line-height: 19px;
+		font-weight: 700;
+}
+		#fontsize a:hover {
+				background: #666;
+				color: #fff;
+			
+		}
+</style>
+
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+</head>
+<body>
+<div class="wrp">
+<div class="header">
+	<a class="logo" href="http://icomoon.io/" target="_blank">IcoMoon</a> 
+	<a class="setting" href="index.php?option=com_plugins" title="Settings">Settings</a>
+</div>	
+<br /><br /><br />
+<ul class="the-icons">
+	<li><button onclick="insertFonticons1();"><i class="icon1-home"></i></button></li>
+	<li><button onclick="insertFonticons2();"><i class="icon1-pencil"></i></button></li>
+	<li><button onclick="insertFonticons3();"><i class="icon1-newspaper"></i></button></li>
+	<li><button onclick="insertFonticons4();"><i class="icon1-pencil-2"></i></button></li>
+	<li><button onclick="insertFonticons5();"><i class="icon1-droplet"></i></button></li>
+	<li><button onclick="insertFonticons6();"><i class="icon1-pictures"></i></button></li>
+	<li><button onclick="insertFonticons7();"><i class="icon1-picture"></i></button></li>
+	<li><button onclick="insertFonticons8();"><i class="icon1-camera"></i></button></li>
+	<li><button onclick="insertFonticons9();"><i class="icon1-music"></i></button></li>
+	<li><button onclick="insertFonticons10();"><i class="icon1-play"></i></button></li>
+	<li><button onclick="insertFonticons11();"><i class="icon1-film"></i></button></li>
+	<li><button onclick="insertFonticons12();"><i class="icon1-camera-2"></i></button></li>
+	<li><button onclick="insertFonticons13();"><i class="icon1-spades"></i></button></li>
+	<li><button onclick="insertFonticons14();"><i class="icon1-basket"></i></button></li>
+	<li><button onclick="insertFonticons15();"><i class="icon1-cart"></i></button></li>
+	<li><button onclick="insertFonticons16();"><i class="icon1-tag"></i></button></li>
+	<li><button onclick="insertFonticons17();"><i class="icon1-folder"></i></button></li>
+	<li><button onclick="insertFonticons18();"><i class="icon1-folder-2"></i></button></li>
+	<li><button onclick="insertFonticons19();"><i class="icon1-copy"></i></button></li>
+	<li><button onclick="insertFonticons20();"><i class="icon1-new"></i></button></li>
+	<li><button onclick="insertFonticons21();"><i class="icon1-file"></i></button></li>
+	<li><button onclick="insertFonticons22();"><i class="icon1-file-2"></i></button></li>
+	<li><button onclick="insertFonticons23();"><i class="icon1-book"></i></button></li>
+	<li><button onclick="insertFonticons24();"><i class="icon1-mic"></i></button></li>
+	<li><button onclick="insertFonticons25();"><i class="icon1-broadcast"></i></button></li>
+	<li><button onclick="insertFonticons26();"><i class="icon1-diamonds"></i></button></li>
+	<li><button onclick="insertFonticons27();"><i class="icon1-clubs"></i></button></li>
+	<li><button onclick="insertFonticons28();"><i class="icon1-calculate"></i></button></li>
+	<li><button onclick="insertFonticons29();"><i class="icon1-support"></i></button></li>
+	<li><button onclick="insertFonticons30();"><i class="icon1-phone"></i></button></li>
+	<li><button onclick="insertFonticons31();"><i class="icon1-mail"></i></button></li>
+	<li><button onclick="insertFonticons32();"><i class="icon1-location"></i></button></li>
+	<li><button onclick="insertFonticons33();"><i class="icon1-compass"></i></button></li>
+	<li><button onclick="insertFonticons34();"><i class="icon1-clock"></i></button></li>
+	<li><button onclick="insertFonticons35();"><i class="icon1-history"></i></button></li>
+	<li><button onclick="insertFonticons36();"><i class="icon1-bell"></i></button></li>
+	<li><button onclick="insertFonticons37();"><i class="icon1-calendar"></i></button></li>
+	<li><button onclick="insertFonticons38();"><i class="icon1-printer"></i></button></li>
+	<li><button onclick="insertFonticons39();"><i class="icon1-mouse"></i></button></li>
+	<li><button onclick="insertFonticons40();"><i class="icon1-screen"></i></button></li>
+	<li><button onclick="insertFonticons41();"><i class="icon1-laptop"></i></button></li>
+	<li><button onclick="insertFonticons42();"><i class="icon1-redo"></i></button></li>
+	<li><button onclick="insertFonticons43();"><i class="icon1-undo"></i></button></li>
+	<li><button onclick="insertFonticons44();"><i class="icon1-flip"></i></button></li>
+	<li><button onclick="insertFonticons45();"><i class="icon1-flip-2"></i></button></li>
+	<li><button onclick="insertFonticons46();"><i class="icon1-database"></i></button></li>
+	<li><button onclick="insertFonticons47();"><i class="icon1-upload"></i></button></li>
+	<li><button onclick="insertFonticons48();"><i class="icon1-download"></i></button></li>
+	<li><button onclick="insertFonticons49();"><i class="icon1-box-remove"></i></button></li>
+	<li><button onclick="insertFonticons50();"><i class="icon1-box-add"></i></button></li>
+	<li><button onclick="insertFonticons51();"><i class="icon1-box"></i></button></li>
+	<li><button onclick="insertFonticons52();"><i class="icon1-drawer"></i></button></li>
+	<li><button onclick="insertFonticons53();"><i class="icon1-drawer-2"></i></button></li>
+	<li><button onclick="insertFonticons54();"><i class="icon1-cabinet"></i></button></li>
+	<li><button onclick="insertFonticons55();"><i class="icon1-mobile"></i></button></li>
+	<li><button onclick="insertFonticons56();"><i class="icon1-forward"></i></button></li>
+	<li><button onclick="insertFonticons57();"><i class="icon1-reply"></i></button></li>
+	<li><button onclick="insertFonticons58();"><i class="icon1-reply-2"></i></button></li>
+	<li><button onclick="insertFonticons59();"><i class="icon1-comments"></i></button></li>
+	<li><button onclick="insertFonticons60();"><i class="icon1-comments-2"></i></button></li>
+	<li><button onclick="insertFonticons61();"><i class="icon1-comments-3"></i></button></li>
+	<li><button onclick="insertFonticons62();"><i class="icon1-comments-4"></i></button></li>
+	<li><button onclick="insertFonticons63();"><i class="icon1-comments-5"></i></button></li>
+	<li><button onclick="insertFonticons64();"><i class="icon1-user"></i></button></li>
+	<li><button onclick="insertFonticons65();"><i class="icon1-user-2"></i></button></li>
+	<li><button onclick="insertFonticons66();"><i class="icon1-user-3"></i></button></li>
+	<li><button onclick="insertFonticons67();"><i class="icon1-busy"></i></button></li>
+	<li><button onclick="insertFonticons68();"><i class="icon1-loading"></i></button></li>
+	<li><button onclick="insertFonticons69();"><i class="icon1-loading-2"></i></button></li>
+	<li><button onclick="insertFonticons70();"><i class="icon1-gift"></i></button></li>
+	<li><button onclick="insertFonticons71();"><i class="icon1-stats-up"></i></button></li>
+	<li><button onclick="insertFonticons72();"><i class="icon1-bars"></i></button></li>
+	<li><button onclick="insertFonticons73();"><i class="icon1-cog"></i></button></li>
+	<li><button onclick="insertFonticons74();"><i class="icon1-pie"></i></button></li>
+	<li><button onclick="insertFonticons75();"><i class="icon1-equalizer"></i></button></li>
+	<li><button onclick="insertFonticons76();"><i class="icon1-wrench"></i></button></li>
+	<li><button onclick="insertFonticons77();"><i class="icon1-unlocked"></i></button></li>
+	<li><button onclick="insertFonticons78();"><i class="icon1-locked"></i></button></li>
+	<li><button onclick="insertFonticons79();"><i class="icon1-key"></i></button></li>
+	<li><button onclick="insertFonticons80();"><i class="icon1-key-2"></i></button></li>
+	<li><button onclick="insertFonticons81();"><i class="icon1-zoom-in"></i></button></li>
+	<li><button onclick="insertFonticons82();"><i class="icon1-zoom-out"></i></button></li>
+	<li><button onclick="insertFonticons83();"><i class="icon1-search"></i></button></li>
+	<li><button onclick="insertFonticons84();"><i class="icon1-trophy"></i></button></li>
+	<li><button onclick="insertFonticons85();"><i class="icon1-diamond"></i></button></li>
+	<li><button onclick="insertFonticons86();"><i class="icon1-coffee"></i></button></li>
+	<li><button onclick="insertFonticons87();"><i class="icon1-rocket"></i></button></li>
+	<li><button onclick="insertFonticons88();"><i class="icon1-meter-slow"></i></button></li>
+	<li><button onclick="insertFonticons89();"><i class="icon1-meter-medium"></i></button></li>
+	<li><button onclick="insertFonticons90();"><i class="icon1-meter-fast"></i></button></li>
+	<li><button onclick="insertFonticons91();"><i class="icon1-dashboard"></i></button></li>
+	<li><button onclick="insertFonticons92();"><i class="icon1-fire"></i></button></li>
+	<li><button onclick="insertFonticons93();"><i class="icon1-lab"></i></button></li>
+	<li><button onclick="insertFonticons94();"><i class="icon1-remove"></i></button></li>
+	<li><button onclick="insertFonticons95();"><i class="icon1-remove-2"></i></button></li>
+	<li><button onclick="insertFonticons96();"><i class="icon1-remove-3"></i></button></li>
+	<li><button onclick="insertFonticons97();"><i class="icon1-briefcase"></i></button></li>
+	<li><button onclick="insertFonticons98();"><i class="icon1-power"></i></button></li>
+	<li><button onclick="insertFonticons99();"><i class="icon1-lightning"></i></button></li>
+	<li><button onclick="insertFonticons100();"><i class="icon1-target"></i></button></li>
+	<li><button onclick="insertFonticons101();"><i class="icon1-target-2"></i></button></li>
+	<li><button onclick="insertFonticons102();"><i class="icon1-accessibility"></i></button></li>
+	<li><button onclick="insertFonticons103();"><i class="icon1-accessibility-2"></i></button></li>
+	<li><button onclick="insertFonticons104();"><i class="icon1-glasses"></i></button></li>
+	<li><button onclick="insertFonticons105();"><i class="icon1-glasses-2"></i></button></li>
+	<li><button onclick="insertFonticons106();"><i class="icon1-cube"></i></button></li>
+	<li><button onclick="insertFonticons107();"><i class="icon1-puzzle"></i></button></li>
+	<li><button onclick="insertFonticons108();"><i class="icon1-cube-2"></i></button></li>
+	<li><button onclick="insertFonticons109();"><i class="icon1-bus"></i></button></li>
+	<li><button onclick="insertFonticons110();"><i class="icon1-cars"></i></button></li>
+	<li><button onclick="insertFonticons111();"><i class="icon1-briefcase-2"></i></button></li>
+	<li><button onclick="insertFonticons112();"><i class="icon1-power-2"></i></button></li>
+	<li><button onclick="insertFonticons113();"><i class="icon1-clipboard"></i></button></li>
+	<li><button onclick="insertFonticons114();"><i class="icon1-clipboard-2"></i></button></li>
+	<li><button onclick="insertFonticons115();"><i class="icon1-playlist"></i></button></li>
+	<li><button onclick="insertFonticons116();"><i class="icon1-grid-view"></i></button></li>
+	<li><button onclick="insertFonticons117();"><i class="icon1-tree-view"></i></button></li>
+	<li><button onclick="insertFonticons118();"><i class="icon1-cloud"></i></button></li>
+	<li><button onclick="insertFonticons119();"><i class="icon1-cloud-2"></i></button></li>
+	<li><button onclick="insertFonticons120();"><i class="icon1-download-2"></i></button></li>
+	<li><button onclick="insertFonticons121();"><i class="icon1-upload-2"></i></button></li>
+	<li><button onclick="insertFonticons122();"><i class="icon1-upload-3"></i></button></li>
+	<li><button onclick="insertFonticons123();"><i class="icon1-link"></i></button></li>
+	<li><button onclick="insertFonticons124();"><i class="icon1-link-2"></i></button></li>
+	<li><button onclick="insertFonticons125();"><i class="icon1-flag"></i></button></li>
+	<li><button onclick="insertFonticons126();"><i class="icon1-flag-2"></i></button></li>
+	<li><button onclick="insertFonticons127();"><i class="icon1-attachment"></i></button></li>
+	<li><button onclick="insertFonticons128();"><i class="icon1-eye"></i></button></li>
+	<li><button onclick="insertFonticons129();"><i class="icon1-eye-2"></i></button></li>
+	<li><button onclick="insertFonticons130();"><i class="icon1-bookmark"></i></button></li>
+	<li><button onclick="insertFonticons131();"><i class="icon1-bookmark-2"></i></button></li>
+	<li><button onclick="insertFonticons132();"><i class="icon1-star"></i></button></li>
+	<li><button onclick="insertFonticons133();"><i class="icon1-star-2"></i></button></li>
+	<li><button onclick="insertFonticons134();"><i class="icon1-star-3"></i></button></li>
+	<li><button onclick="insertFonticons135();"><i class="icon1-heart"></i></button></li>
+	<li><button onclick="insertFonticons136();"><i class="icon1-heart-2"></i></button></li>
+	<li><button onclick="insertFonticons137();"><i class="icon1-thumbs-up"></i></button></li>
+	<li><button onclick="insertFonticons138();"><i class="icon1-thumbs-down"></i></button></li>
+	<li><button onclick="insertFonticons139();"><i class="icon1-happy"></i></button></li>	
+	<li><button onclick="insertFonticons140();"><i class="icon1-exit"></i></button></li>
+	<li><button onclick="insertFonticons141();"><i class="icon1-enter"></i></button></li>
+	<li><button onclick="insertFonticons142();"><i class="icon1-plus"></i></button></li>
+	<li><button onclick="insertFonticons143();"><i class="icon1-minus"></i></button></li>
+	<li><button onclick="insertFonticons144();"><i class="icon1-checkmark"></i></button></li>
+	<li><button onclick="insertFonticons145();"><i class="icon1-cancel"></i></button></li>
+	<li><button onclick="insertFonticons146();"><i class="icon1-blocked"></i></button></li>
+	<li><button onclick="insertFonticons147();"><i class="icon1-cancel-2"></i></button></li>
+	<li><button onclick="insertFonticons148();"><i class="icon1-help"></i></button></li>
+	<li><button onclick="insertFonticons149();"><i class="icon1-help-2"></i></button></li>	
+	<li><button onclick="insertFonticons150();"><i class="icon1-minus-2"></i></button></li>
+	<li><button onclick="insertFonticons151();"><i class="icon1-plus-2"></i></button></li>
+	<li><button onclick="insertFonticons152();"><i class="icon1-smiley"></i></button></li>
+	<li><button onclick="insertFonticons153();"><i class="icon1-neutral"></i></button></li>
+	<li><button onclick="insertFonticons154();"><i class="icon1-loop"></i></button></li>
+	<li><button onclick="insertFonticons155();"><i class="icon1-arrow-up-left"></i></button></li>
+	<li><button onclick="insertFonticons156();"><i class="icon1-arrow-up"></i></button></li>
+	<li><button onclick="insertFonticons157();"><i class="icon1-arrow-up-right"></i></button></li>
+	<li><button onclick="insertFonticons158();"><i class="icon1-arrow-right"></i></button></li>
+	<li><button onclick="insertFonticons159();"><i class="icon1-arrow-down-right"></i></button></li>	
+	<li><button onclick="insertFonticons160();"><i class="icon1-arrow-down"></i></button></li>
+	<li><button onclick="insertFonticons161();"><i class="icon1-arrow-down-left"></i></button></li>
+	<li><button onclick="insertFonticons162();"><i class="icon1-arrow-left"></i></button></li>
+	<li><button onclick="insertFonticons163();"><i class="icon1-arrow-up-left-2"></i></button></li>
+	<li><button onclick="insertFonticons164();"><i class="icon1-arrow-up-2"></i></button></li>
+	<li><button onclick="insertFonticons165();"><i class="icon1-arrow-up-right-2"></i></button></li>
+	<li><button onclick="insertFonticons166();"><i class="icon1-arrow-right-2"></i></button></li>
+	<li><button onclick="insertFonticons167();"><i class="icon1-arrow-down-right-2"></i></button></li>
+	<li><button onclick="insertFonticons168();"><i class="icon1-arrow-down-2"></i></button></li>
+	<li><button onclick="insertFonticons169();"><i class="icon1-arrow-right-3"></i></button></li>	
+	<li><button onclick="insertFonticons170();"><i class="icon1-arrow-up-3"></i></button></li>
+	<li><button onclick="insertFonticons171();"><i class="icon1-arrow-left-2"></i></button></li>
+	<li><button onclick="insertFonticons172();"><i class="icon1-arrow-down-left-2"></i></button></li>
+	<li><button onclick="insertFonticons173();"><i class="icon1-arrow-down-3"></i></button></li>
+	<li><button onclick="insertFonticons174();"><i class="icon1-arrow-down-right-3"></i></button></li>
+	<li><button onclick="insertFonticons175();"><i class="icon1-arrow-right-4"></i></button></li>
+	<li><button onclick="insertFonticons176();"><i class="icon1-arrow-up-right-3"></i></button></li>
+	<li><button onclick="insertFonticons177();"><i class="icon1-arrow-up-4"></i></button></li>
+	<li><button onclick="insertFonticons178();"><i class="icon1-arrow-up-left-3"></i></button></li>
+	<li><button onclick="insertFonticons179();"><i class="icon1-arrow-left-3"></i></button></li>	
+	<li><button onclick="insertFonticons180();"><i class="icon1-arrow-down-left-3"></i></button></li>
+	<li><button onclick="insertFonticons181();"><i class="icon1-arrow-down-4"></i></button></li>
+	<li><button onclick="insertFonticons182();"><i class="icon1-arrow-left-4"></i></button></li>
+	<li><button onclick="insertFonticons183();"><i class="icon1-arrow-up-5"></i></button></li>
+	<li><button onclick="insertFonticons184();"><i class="icon1-arrow-right-5"></i></button></li>
+	<li><button onclick="insertFonticons185();"><i class="icon1-arrow-down-5"></i></button></li>
+	<li><button onclick="insertFonticons186();"><i class="icon1-arrow-left-5"></i></button></li>
+	<li><button onclick="insertFonticons187();"><i class="icon1-arrow-up-6"></i></button></li>
+	<li><button onclick="insertFonticons188();"><i class="icon1-arrow-right-6"></i></button></li>
+	<li><button onclick="insertFonticons189();"><i class="icon1-arrow-down-6"></i></button></li>	
+	<li><button onclick="insertFonticons190();"><i class="icon1-arrow-left-6"></i></button></li>
+	<li><button onclick="insertFonticons191();"><i class="icon1-menu"></i></button></li>
+	<li><button onclick="insertFonticons192();"><i class="icon1-enter-2"></i></button></li>
+	<li><button onclick="insertFonticons193();"><i class="icon1-backspace"></i></button></li>
+	<li><button onclick="insertFonticons194();"><i class="icon1-backspace-2"></i></button></li>
+	<li><button onclick="insertFonticons195();"><i class="icon1-tab"></i></button></li>
+	<li><button onclick="insertFonticons196();"><i class="icon1-right-to-left"></i></button></li>
+	<li><button onclick="insertFonticons197();"><i class="icon1-left-to-right"></i></button></li>
+	<li><button onclick="insertFonticons198();"><i class="icon1-share"></i></button></li>
+	<li><button onclick="insertFonticons199();"><i class="icon1-paragraph-justify"></i></button></li>
+	<li><button onclick="insertFonticons200();"><i class="icon1-paragraph-right"></i></button></li>
+	<li><button onclick="insertFonticons201();"><i class="icon1-paragraph-center"></i></button></li>
+	<li><button onclick="insertFonticons202();"><i class="icon1-paragraph-left"></i></button></li>
+	<li><button onclick="insertFonticons203();"><i class="icon1-font"></i></button></li>
+	<li><button onclick="insertFonticons204();"><i class="icon1-radio-unchecked"></i></button></li>
+	<li><button onclick="insertFonticons205();"><i class="icon1-radio-checked"></i></button></li>
+	<li><button onclick="insertFonticons206();"><i class="icon1-checkbox-partial"></i></button></li>
+	<li><button onclick="insertFonticons207();"><i class="icon1-checkbox-unchecked"></i></button></li>
+	<li><button onclick="insertFonticons208();"><i class="icon1-tab-2"></i></button></li>
+	<li><button onclick="insertFonticons209();"><i class="icon1-checkbox"></i></button></li>
+	<li><button onclick="insertFonticons210();"><i class="icon1-new-tab"></i></button></li>
+	<li><button onclick="insertFonticons211();"><i class="icon1-new-tab-2"></i></button></li>
+	<li><button onclick="insertFonticons212();"><i class="icon1-embed"></i></button></li>
+	<li><button onclick="insertFonticons213();"><i class="icon1-code"></i></button></li>
+	<li><button onclick="insertFonticons214();"><i class="icon1-bluetooth"></i></button></li>
+	<li><button onclick="insertFonticons215();"><i class="icon1-share-2"></i></button></li>
+	<li><button onclick="insertFonticons216();"><i class="icon1-share-3"></i></button></li>
+	<li><button onclick="insertFonticons217();"><i class="icon1-mail-2"></i></button></li>
+	<li><button onclick="insertFonticons218();"><i class="icon1-mail-3"></i></button></li>
+	<li><button onclick="insertFonticons219();"><i class="icon1-mail-4"></i></button></li>
+	<li><button onclick="insertFonticons220();"><i class="icon1-google"></i></button></li>
+	<li><button onclick="insertFonticons221();"><i class="icon1-google-plus"></i></button></li>
+	<li><button onclick="insertFonticons222();"><i class="icon1-google-plus-2"></i></button></li>
+	<li><button onclick="insertFonticons223();"><i class="icon1-google-plus-3"></i></button></li>
+	<li><button onclick="insertFonticons224();"><i class="icon1-youtube"></i></button></li>
+	<li><button onclick="insertFonticons225();"><i class="icon1-youtube-2"></i></button></li>
+	<li><button onclick="insertFonticons226();"><i class="icon1-feed"></i></button></li>
+	<li><button onclick="insertFonticons227();"><i class="icon1-feed-2"></i></button></li>
+	<li><button onclick="insertFonticons228();"><i class="icon1-twitter"></i></button></li>
+	<li><button onclick="insertFonticons229();"><i class="icon1-twitter-2"></i></button></li>
+	<li><button onclick="insertFonticons230();"><i class="icon1-twitter-3"></i></button></li>
+	<li><button onclick="insertFonticons231();"><i class="icon1-instagram"></i></button></li>
+	<li><button onclick="insertFonticons232();"><i class="icon1-facebook"></i></button></li>
+	<li><button onclick="insertFonticons233();"><i class="icon1-facebook-2"></i></button></li>
+	<li><button onclick="insertFonticons234();"><i class="icon1-facebook-3"></i></button></li>
+	<li><button onclick="insertFonticons235();"><i class="icon1-google-drive"></i></button></li>
+	<li><button onclick="insertFonticons236();"><i class="icon1-gplus"></i></button></li>
+	<li><button onclick="insertFonticons237();"><i class="icon1-vimeo"></i></button></li>
+	<li><button onclick="insertFonticons238();"><i class="icon1-vimeo-2"></i></button></li>
+	<li><button onclick="insertFonticons239();"><i class="icon1-flickr"></i></button></li>	
+	<li><button onclick="insertFonticons240();"><i class="icon1-flickr-2"></i></button></li>
+	<li><button onclick="insertFonticons241();"><i class="icon1-flickr-3"></i></button></li>
+	<li><button onclick="insertFonticons242();"><i class="icon1-picassa"></i></button></li>
+	<li><button onclick="insertFonticons243();"><i class="icon1-picassa-2"></i></button></li>
+	<li><button onclick="insertFonticons244();"><i class="icon1-dribbble"></i></button></li>
+	<li><button onclick="insertFonticons245();"><i class="icon1-dribbble-2"></i></button></li>
+	<li><button onclick="insertFonticons246();"><i class="icon1-dribbble-3"></i></button></li>
+	<li><button onclick="insertFonticons247();"><i class="icon1-forrst"></i></button></li>
+	<li><button onclick="insertFonticons248();"><i class="icon1-forrst-2"></i></button></li>
+	<li><button onclick="insertFonticons249();"><i class="icon1-deviantart"></i></button></li>	
+	<li><button onclick="insertFonticons250();"><i class="icon1-feed-3"></i></button></li>
+	<li><button onclick="insertFonticons251();"><i class="icon1-deviantart-2"></i></button></li>
+	<li><button onclick="insertFonticons252();"><i class="icon1-tumblr"></i></button></li>
+	<li><button onclick="insertFonticons253();"><i class="icon1-blogger"></i></button></li>
+	<li><button onclick="insertFonticons254();"><i class="icon1-blogger-2"></i></button></li>
+	<li><button onclick="insertFonticons255();"><i class="icon1-joomla"></i></button></li>
+	<li><button onclick="insertFonticons256();"><i class="icon1-wordpress"></i></button></li>
+	<li><button onclick="insertFonticons257();"><i class="icon1-wordpress-2"></i></button></li>
+	<li><button onclick="insertFonticons258();"><i class="icon1-github"></i></button></li>
+	<li><button onclick="insertFonticons259();"><i class="icon1-git"></i></button></li>	
+	<li><button onclick="insertFonticons260();"><i class="icon1-github-2"></i></button></li>
+	<li><button onclick="insertFonticons261();"><i class="icon1-github-3"></i></button></li>
+	<li><button onclick="insertFonticons262();"><i class="icon1-github-4"></i></button></li>
+	<li><button onclick="insertFonticons263();"><i class="icon1-github-5"></i></button></li>
+	<li><button onclick="insertFonticons264();"><i class="icon1-github-6"></i></button></li>
+	<li><button onclick="insertFonticons265();"><i class="icon1-github-7"></i></button></li>
+	<li><button onclick="insertFonticons266();"><i class="icon1-tumblr-2"></i></button></li>
+	<li><button onclick="insertFonticons267();"><i class="icon1-yahoo"></i></button></li>
+	<li><button onclick="insertFonticons268();"><i class="icon1-yahoo-2"></i></button></li>
+	<li><button onclick="insertFonticons269();"><i class="icon1-amazon"></i></button></li>	
+	<li><button onclick="insertFonticons270();"><i class="icon1-amazon-2"></i></button></li>
+	<li><button onclick="insertFonticons271();"><i class="icon1-tux"></i></button></li>
+	<li><button onclick="insertFonticons272();"><i class="icon1-apple"></i></button></li>
+	<li><button onclick="insertFonticons273();"><i class="icon1-finder"></i></button></li>
+	<li><button onclick="insertFonticons274();"><i class="icon1-android"></i></button></li>
+	<li><button onclick="insertFonticons275();"><i class="icon1-windows"></i></button></li>
+	<li><button onclick="insertFonticons276();"><i class="icon1-soundcloud"></i></button></li>
+	<li><button onclick="insertFonticons277();"><i class="icon1-soundcloud-2"></i></button></li>
+	<li><button onclick="insertFonticons278();"><i class="icon1-skype"></i></button></li>
+	<li><button onclick="insertFonticons279();"><i class="icon1-reddit"></i></button></li>	
+	<li><button onclick="insertFonticons280();"><i class="icon1-foursquare"></i></button></li>
+	<li><button onclick="insertFonticons281();"><i class="icon1-flattr"></i></button></li>
+	<li><button onclick="insertFonticons282();"><i class="icon1-foursquare-2"></i></button></li>
+	<li><button onclick="insertFonticons283();"><i class="icon1-xing"></i></button></li>
+	<li><button onclick="insertFonticons284();"><i class="icon1-xing-2"></i></button></li>
+	<li><button onclick="insertFonticons285();"><i class="icon1-pinterest"></i></button></li>
+	<li><button onclick="insertFonticons286();"><i class="icon1-pinterest-2"></i></button></li>
+	<li><button onclick="insertFonticons287();"><i class="icon1-stumbleupon"></i></button></li>
+	<li><button onclick="insertFonticons288();"><i class="icon1-delicious"></i></button></li>
+	<li><button onclick="insertFonticons289();"><i class="icon1-stumbleupon-2"></i></button></li>	
+	<li><button onclick="insertFonticons290();"><i class="icon1-lastfm"></i></button></li>
+	<li><button onclick="insertFonticons291();"><i class="icon1-lastfm-2"></i></button></li>
+	<li><button onclick="insertFonticons292();"><i class="icon1-linkedin"></i></button></li>
+	<li><button onclick="insertFonticons293();"><i class="icon1-linkedin-2"></i></button></li>
+	<li><button onclick="insertFonticons294();"><i class="icon1-paypal"></i></button></li>
+	<li><button onclick="insertFonticons295();"><i class="icon1-paypal-2"></i></button></li>
+	<li><button onclick="insertFonticons296();"><i class="icon1-paypal-3"></i></button></li>
+	<li><button onclick="insertFonticons297();"><i class="icon1-yelp"></i></button></li>
+	<li><button onclick="insertFonticons298();"><i class="icon1-libreoffice"></i></button></li>
+	<li><button onclick="insertFonticons299();"><i class="icon1-file-pdf"></i></button></li>
+	<li><button onclick="insertFonticons300();"><i class="icon1-file-openoffice"></i></button></li>
+	<li><button onclick="insertFonticons301();"><i class="icon1-file-word"></i></button></li>
+	<li><button onclick="insertFonticons302();"><i class="icon1-file-excel"></i></button></li>
+	<li><button onclick="insertFonticons303();"><i class="icon1-file-powerpoint"></i></button></li>
+	<li><button onclick="insertFonticons304();"><i class="icon1-file-zip"></i></button></li>
+	<li><button onclick="insertFonticons305();"><i class="icon1-file-xml"></i></button></li>
+	<li><button onclick="insertFonticons306();"><i class="icon1-file-css"></i></button></li>
+	<li><button onclick="insertFonticons307();"><i class="icon1-html5"></i></button></li>
+	<li><button onclick="insertFonticons308();"><i class="icon1-IcoMoon"></i></button></li>
+	<li><button onclick="insertFonticons309();"><i class="icon1-safari"></i></button></li>
+	<li><button onclick="insertFonticons310();"><i class="icon1-opera"></i></button></li>
+	<li><button onclick="insertFonticons311();"><i class="icon1-IE"></i></button></li>
+	<li><button onclick="insertFonticons312();"><i class="icon1-firefox"></i></button></li>
+	<li><button onclick="insertFonticons313();"><i class="icon1-css3"></i></button></li>
+	<li><button onclick="insertFonticons314();"><i class="icon1-html5-2"></i></button></li>
+	<li><button onclick="insertFonticons315();"><i class="icon1-chrome"></i></button></li>
+	<li><button onclick="insertFonticons316();"><i class="icon1-home-2"></i></button></li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="footer"><a href="http://www.templateplazza.com" target="_blank"><img src="assets/poweredby.png" alt="Powered By TemplatePlazza"></a></div>
+</body>
+</html>

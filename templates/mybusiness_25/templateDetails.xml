@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension
+    version="2.5"
+    type="template"
+    client="site">
+    <name>mybusiness_25</name>
+    <creationDate>1/01/09</creationDate>
+    <author>themesjoomla.com</author>
+    <authorEmail>webmaster@themesjoomla.com</authorEmail>
+    <authorUrl>http://www.themesjoomla.com</authorUrl>
+    <copyright>ThemesJoomla.com. All rights reserved.</copyright>
+    <license>Creative Commons Attribution 2.5 License.</license>
+    <version>2.5.0</version>
+    <description>
+    <![CDATA[<h3>License</h3>
+      
+      All the free CSS templates on this site are distributed under the  <b><a href="http://creativecommons.org/licenses/by/2.5/"> Creative Commons Attribution 2.5 License.</a></b> This means that you are free:
+      
+      <ul>
+      <li>to copy, distribute, display, and perform the work</li>
+      <li>to make derivative works</li>
+      <li>to make commercial use of the work</li>
+      </ul>
+      Under the following conditions:
+      <ul>
+      <li>You must attribute the work in the manner specified by the author or licensor. (In this case, a link back to my site)</li>
+      <li>For any reuse or distribution, you must make clear to others the license terms of this work</li>
+      <li>Any of these conditions can be waived if you get permission from the copyright holder</li>
+      <li>You can not delete sponsorlinks if template have it.</li>
+      </ul>
+      
+      <h3>Removing the link and template sponsor</h3>
+      
+      If you don't want to link back to themesjoomla.com, you can always pay a link removal donation. This will allow you to use the template link free on one domain name. Also, kindly send me the site's url so I can include it on my list of verified users <br />
+      
+      Please contact to me with <a href="mailto:webmaster@themesjoomla.com">webmaster@themesjoomla.com</a>]]>
+    </description>
+    <files>
+        
+        <folder>css</folder>
+        <folder>images</folder>
+        <filename>index.php</filename>
+        <filename>index.html</filename>
+        <filename>favicon.ico</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>error.php</filename>
+    </files>
+
+    <positions>
+        <position>mymainmenu</position>	
+        <position>myright</position>
+        <position>myspotlight</position>
+        <position>myuser1</position>
+        <position>myuser2</position>
+        <position>myuser3</position>
+        <position>myfooter</position>
+        <position>debug</position>
+    </positions>
+
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field name="siteName"  type="text" default="Themes Joomla"
+                       label="Site Name"
+                       description="Set Site Name"
+                       filter="string" />
+                <field name="logo" type="media" label="Logo" description="Select Logo" />
+                
+                <field name="show_spotlight" type="list" default="1"
+                                       label="Show Spotlight Image"
+                                       description=""
+                                       filter="int"
+                >
+                    <option value="0">Hide</option>
+                    <option value="1">Show</option>
+                </field>
+                <field name="spotlight_image" type="media" label="Show Spotlight Image" description="Select Show Spotlight Image" />
+                <field name="spotlight_image_link"  type="text" default=""
+                       label="Show Spotlight Image Link"
+                       description="Set Show Spotlight Image Link. For ex: http://www.mysite.com/services"
+                       filter="string" />
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>

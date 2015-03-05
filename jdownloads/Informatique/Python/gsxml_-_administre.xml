@@ -1,0 +1,54 @@
+<administre id="xxx" adxmlpath="urlofAcciodocXMLFile" adxmllock="true/false" pingurl="urltoping">
+	<documents>
+		<document id="docid" docpath="urlofdoc" maindoc="true/false">
+			<description>
+				<fr>description fr</fr>
+				<de>description de</de>
+			</description>
+		</document>
+		...
+		<document id="docid" docpath="urlofdoc" maindoc="true/false">
+			<description>
+				<fr>description fr</fr>
+				<de>description de</de>
+			</description>
+		</document>
+	</documents>
+	<processes>
+		<process id="procid" adxmlpath="urlofAcciodocXMLFile" adxmllock="true/false" pingurl="urltoping">
+			<documents>
+				<document id="docid" docpath="urlofdoc" maindoc="true/false">
+					<description>
+						<fr>description fr</fr>
+						<de>description de</de>
+					</description>
+				</document>
+				...
+				<document id="docid" docpath="urlofdoc" maindoc="true/false">
+					<description>
+						<fr>description fr</fr>
+						<de>description de</de>
+					</description>
+				</document>
+			</documents>
+		</process>
+		...
+		<process id="procid" adxmlpath="urlofAcciodocXMLFile" adxmllock="true/false" pingurl="urltoping">
+			<documents>
+				<document id="docid" docpath="urlofdoc" maindoc="true/false">
+					<description>
+						<fr>description fr</fr>
+						<de>description de</de>
+					</description>
+				</document>
+				...
+				<document id="docid" docpath="urlofdoc" maindoc="true/false">
+					<description>
+						<fr>description fr</fr>
+						<de>description de</de>
+					</description>
+				</document>
+			</documents>
+		</process>
+	</processes>
+</administre>

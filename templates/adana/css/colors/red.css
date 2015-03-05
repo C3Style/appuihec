@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background:url(../../images/body_bg_red.png) repeat-x #eee;
+}
+a {
+	color:#C00;
+}
+a:focus, a:hover {
+	color:#F00;
+}
+#header {
+	background:url(../../images/header_bg_red.jpg) no-repeat;
+}
+
+.categories-list li .item-title, .cat-children .item-title {
+	border-left:3px solid #C00;
+	border-bottom:2px solid #C00;
+}
+.readmore {
+	border-left:3px solid #C00;
+}

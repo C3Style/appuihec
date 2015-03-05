@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">      
+	<name>plg_content_fonticons</name>
+	<creationDate>Oct 2012</creationDate>
+	<version>1.0</version>
+	<author>TemplatePlazza</author>
+	<copyright>Copyright 2012 - TemplatePlazza.com</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@templateplazza.com</authorEmail>
+	<authorUrl>www.templateplazza.com</authorUrl>
+	<description>PLG_CONTENT_FONTICONS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="fonticons">fonticons.php</filename>
+		<filename>index.html</filename>	
+		<filename>license-icomoon.txt</filename>
+		<folder>assets</folder>	  
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_fonticons.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_fonticons.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="PLG_CONTENT_FONTICONS_TAB_NAME">
+				
+				<field type="spacer" name="spacerwarn" label="PLG_CONTENT_FONTICONS_WARN" />
+				<field type="spacer" name="spacerimimg" label="PLG_CONTENT_FONTICONS_ICOMOON_IMG" />
+				
+				<field name="icomoon" type="hidden"
+					default="1"
+					description="Enable IcoMoon font"
+					label="PLG_CONTENT_FONTICONS_ICOMOON_IMG_DESC"
+				/>
+				
+				<field type="spacer" name="spacericodesc" label="PLG_CONTENT_FONTICONS_ICOMOON_DESC" />
+				<field type="spacer" name="spacer1" hr="true" />
+
+				
+			</fieldset>
+		</fields>	
+	</config>
+</extension>

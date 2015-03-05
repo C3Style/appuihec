@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Manual</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #ddd;
+	font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	line-height:140%;
+}
+p { padding:0; margin:2px 0;}
+h2 {color:blue;text-decoration:underline;margin-top:40px;background-color:#ddd;}
+#container { width:95%; margin:0 auto; border:3px solid #666; padding:10px; background:#FFFFFF;}
+-->
+</style></head>
+
+<body>
+
+<div id="container">
+
+
+	<h1>Documentation</h1>
+
+	<h2>In the package, you have :</h2>
+	<ul>
+	<li>This manual</mo>
+	<li>The template for Joomla 1.5 and for Joomla 1.6</li>
+	<li>The slideshow of this demo for Joomla 1.5 and for Joomla 1.6</li>
+	</ul>
+
+
+	<div>
+	<h2>Template Settings</h2>
+	
+	<p>You can access to template manager with the top menu : "Extensions --> Template Manager --> JoomSpirit 18 "</p>
+	<p>With "JoomSpirit 18 template", you can :</p>
+	<ul>
+	<li>Set the width of your website, the left and right column in px or % (fixed or fluid) </li>
+	<li>Set the color for articles and modules titles, link in content and active links</li>	
+	<li>choose the font size</li>
+	<li>Use mootools tooltips</li>
+	</ul>
+	<img src="images-manual/template_settings.jpg" />
+	</div>
+
+	<div>
+	<h2>Typography</h2>
+	<img src="images-manual/typo_joomspirit_18.jpg" />
+	</div>
+
+	<div>
+	<h2>Module Positions</h2>
+	<p>You must publish your modules with the right position :</p>
+	<img src="images-manual/module-positions.jpg" />
+	<br />
+	<p style="font-weight:bold;">Example for the "adress" position : go to the module manager and create a new module with the option "custom html". Write your adress or/and copyright and choose the position "adress".</p>
+	</div>
+
+	<div>
+	<h2>How to display your logo ?</h2>
+	<p>Go to the module manager and create a new module with the option "custom html". Choose the position "logo". For insert your logo you have two possibilities :</p>
+	<ul>
+	<li>Insert your image with the wysiwyg editor for a normal display.</li>
+	<li>Disable your wysiwyg editor and enter this code for obtain a rollover effect :<br />
+	<img src="images-manual/logo.jpg" /><div style="clear:both;"></div>
+	Go to the folder "images" of the template and replace the file "logo.png" and "logo_hover.png" .</li>
+	</ul>
+	<p>Note : the maximum height for the logo is 100px.</p>
+	</div>	
+	
+	<div>
+	<h2>How to configure the main menu ?</h2>
+	
+	<p>You must select your menu in module manager and enter this settings :</p>
+	<ul>
+	<li>position : "menu"</li>
+	<li>menu style : "list"</li>
+	<li>Always show sub-menu items : "yes"</li>
+	<li>Menu tag ID : "main_menu"</li>
+	</ul>
+	<br />
+	<img src="images-manual/menu00.jpg" /><div style="clear:both;"></div>
+	</div>
+
+	<div>
+	<h2>How to manage the left and right column ?</h2>
+	<p>The left and right column is perfect to insert modules, menus, images or a text.</p>
+	<p>With this positions you are 2 possibilities for display yours modules :</p>
+	<ul>
+	<li>Without module class suffix : none style for your list. It's ideal for put just an image or text.</li>
+	<li>With the module class suffix " submenu" : you add some CSS style for the list. It's ideal for your menu. I use this setting for the left menu here.</li>
+	</ul>
+	<p>Note : Don't forget the space before the module class suffix</p>
+	</div>
+
+	<div>
+	<h2>How to configure main_menu for display some sub menu ?</h2>
+	<p>For obtain this, the parent item must be a link (for article or component) or a "separator item".</p>
+	</div>
+
+	<div>
+	<h2>How to display the slideshow on the demo ?</h2>
+	<p>For that, use the free module "Ari Image Slider" by <a target="_blank" href="http://www.demo2.ari-soft.com/joomla-image-slider.html">Ari Soft</a></p>
+	<p>You can find this module in this package for Joomla 1.5 and Joomla 1.6</p>
+	<br />
+	<p>Install the module and edit it :</p>
+	<ul>
+	<li><strong>choose the position : "slideshow"</strong></li>
+	</ul>
+	<br />
+	<p>This is my settings for this demo :</p>
+	<img src="images-manual/ari-slider.jpg" /><div style="clear:both;"></div>
+	</div>
+
+	<div>
+	<h2>Tips for the users modules</h2>
+	<p>In the template manager, you can choose the width for user4 and user6. The width of user5 is automatically adjust.<br />
+	<p>So, if you publish only one user module : publish user5 (for a width of 100%).<br />
+	<p>If you publish two users module : publish user4 and user5, or user5 and user6.</p>
+	<br />
+	<p>It's the same thing for user1, user2 and user3.</p>
+	</div>
+	
+	<div>
+	<h2>Tips : how to use multiple versions of this template ?</h2>	
+	<p>With this template, you can set the width of your website in the template manager. But how to obtain a different width for a specific page (or use a different background) ?</p>
+	<p>For that, you can install two versions of the template and assign the second one for some specific page in the template manager. For install an other version, you must rename it :</p>
+	<ul>
+	<li>Unzip the template</li>
+	<li>Edit the file "templateDetails.xml" and change the name of the template (line 3).</li>
+	<li>Zip your new template</li>
+	<li>Install the new version with Joomla</li>
+	</ul>
+	<p>It's very simple and powerfull for manage your website</li>
+	</div>	
+
+
+	
+		
+<br />
+<br />
+<br />
+
+</div>
+
+</body>
+</html>

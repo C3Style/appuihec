@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5">
+	<name>Fonticons Package</name>
+	<packagename>fonticons</packagename>
+	<author>TemplatePlazza</author>
+ 	<creationDate>Oct 2012</creationDate>
+	<version>1.0</version>
+	<url>http://www.templateplazza.com/</url>
+	<packager>TemplatePlazza</packager>
+	<packagerurl>http://www.templateplazza.com</packagerurl>
+	<copyright>Copyright 2012 - TemplatePlazza.com</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description><![CDATA[<style>.adminform th {
+background:#ddd!important;border:none!important;
+}
+.features li {list-style:circle; margin-left:20px;}
+.pluginm_btn {
+		display: inline-block;
+		text-align: center;
+		border: 1px solid #78994e;
+		border-radius: 5px;
+		background-color: #99c167;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(153, 193, 103)), to(rgb(149, 156, 96)));
+		background-image: -webkit-linear-gradient(top, rgb(153, 193, 103), rgb(149, 156, 96));
+		background-image: -moz-linear-gradient(top, rgb(153, 193, 103), rgb(149, 156, 96));
+		background-image: -o-linear-gradient(top, rgb(153, 193, 103), rgb(149, 156, 96));
+		background-image: -ms-linear-gradient(top, rgb(153, 193, 103), rgb(149, 156, 96));
+		background-image: linear-gradient(top, rgb(153, 193, 103), rgb(149, 156, 96));
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#99c167', EndColorStr='#959c60');
+		box-shadow: 0px 2px 2px #A6BCCA;
+		margin: 0 auto ;
+		padding: 5px 10px;
+		color: #fff!important;
+		text-decoration:none!important;
+		text-shadow: 0 -1px 0 #59713A;
+		cursor: pointer;
+		font-size: 14px;
+		-webkit-transition:all 0.26s ease-out;
+		-moz-transition:all 0.26s ease-out;
+		-ms-transition:all 0.26s ease-out;
+		-o-transition:all 0.26s ease-out;
+		 transition:all 0.26s ease-out;}
+	}
+
+
+</style>
+<div style='background:#ddd!important;border:none!important;padding:20px 20px 20px 20px; border-radius:10px; color:#666; text-shadow:0 1px 0 #fff;'>
+	<div style='border-bottom:1px solid #ccc; padding-bottom:10px; margin-bottom:10px;'>
+		
+		<h1 style='font-size:20px;font-weight:400;text-shadow:0 -1px 0 #333; padding:10px;color:#444; background:#666;color:#fff;margin:0px 10px -1px 0;display:block;width:120px;position:absolute;'>
+		Fonticons</h1>
+		<div style='clear:both;'></div>
+		
+		<p style="float:left; margin:0 25px 10px 0"><img src='../plugins/content/fonticons/assets/intro.jpg' alt='Intro' /></p>
+		
+		
+		<p style="font-size:18px;">Fonticons brings "Font-Based Icon" support to your Joomla site </p><p>Font-Based Icons is a great, new way to insert icons to your website content / design. It has several advantages when compared to the traditional image based icon. <br/>By using font based icons you will be able to modify the icon size without having to worry about the quality (the icons will still looks good when your website is opened from retina-ized devices such as iPhone, iPad and Latest Macbook Pro), changing the icon color without having to open your favorite image editor software, adding css3 effect to the icon and see the preview quickly, and many more ...</p><p>Fonticons Plugin helps you to insert font based icons to your joomla content or custom modules easily, by using joomla html editor. You just need to click the Fonticon button that is located in the bottom side of the editor then a new pop up contains the icon sets will appear.<br/>Enjoy it ;)</p><p>Before using Fonticons, you will need to enable the two required plugins, "Button - Fonticons" and "Content - Fonticons" plugins. Please click the button below to open the Plugin Manager</p>
+		<p><a class="pluginm_btn" href="index.php?option=com_plugins">Open Plugin Manager to Enable Fonticons</a></p>
+		<p>If you found any problem with Fonticons, please visit our website for support, tutorial and tips and tricks</p>
+		<p style='color:#586E75; border:1px solid #EEE8D5; border-radius:4px;display:block; background:#FDF6E3; padding:10px;clear:both;'><span style='line-height:36px; margin-right:5px;'>If you're new to FontIcons please watch the 5 Minutes FontIcons Tutorial on </span> <a href='http://www.youtube.com/watch?v=AHl6ZW7SR1A' target='_blank'><img src='../plugins/content/fonticons/assets/youtube.png' alt='Youtube' style='float:none;' /></a></p>
+		
+		
+	</div>
+	<div style='float:left;'>
+		<a href='http://www.templateplazza.com' target='_blank'>
+			<img src='../plugins/content/fonticons/assets/logo.png' style='float:left;margin-top:0;'/></a>
+	</div>
+		
+	<div style='float:right;margin:4px 0 0;'>
+		<a href='http://www.templateplazza.com' target='_blank'>
+			<img src='../plugins/content/fonticons/assets/btn-check-update.png'/></a> 
+		<a href='http://www.twitter.com/templateplazza' target='_blank'>
+			<img src='../plugins/content/fonticons/assets/btn-twitter.png'/></a>
+		<div style='clear:both;'></div>
+	</div>
+	<div style='clear:both;'></div>
+</div>.]]> </description>
+	
+	<files folder="packages">
+		<file type="plugin" id="fonticons" group="content">plg_fonticons.zip</file>
+		<file type="plugin" id="fonticons" group="editors-xtd">plg_fonticonsbtn.zip</file>
+	</files>
+</extension>

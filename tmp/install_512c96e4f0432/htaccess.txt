@@ -1,0 +1,13 @@
+##
+# DOCman 1.4.x - Joomla! Document Manager
+# @version $Id: htaccess.txt 766 2009-01-08 11:41:35Z mathias $
+# @package DOCman_1.4
+# @copyright (C) 2003-2009 Joomlatools
+# @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
+# @link http://www.joomlatools.eu/ Official website
+##
+
+# Note: Having a .htaccess prevents users from directly
+# accessing the files in your data folder
+
+deny from all

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.6" type="template" client="site">
+	<name>Adana</name>
+	<creationDate>1. February 2011</creationDate>
+	<author>Michael Salzmann</author>
+	<authorEmail>funky.visions@googlemail.com</authorEmail>
+	<authorUrl>http://www.funky-visions.de</authorUrl>
+	<copyright>Copyright (C) 2011 Michael Salzmann - All rights reserved.</copyright>
+	<license>Shareware</license>
+	<version>1.0</version>
+	<description>
+	<![CDATA[
+	<style>
+	.alles {
+		max-width:500px;
+	}
+	.languagechoose {
+		width:100%;
+		margin:0;
+		padding:0;
+		display:block;
+		border-bottom:1px solid #ccc;
+		margin-top:2em;
+	}
+	.languagechoose li {
+		float:left;
+		border-bottom:1px solid #ccc;
+		border-right:1px solid #ccc;
+		margin:0;
+		padding:0;
+		margin-top:-26px;
+	}
+	.languagechoose li a{
+		display:block;
+		padding:0.5em;
+		background-color:#eee;
+	}
+	
+	.english, .deutsch {
+		clear:both;
+		display:none;
+	}
+	
+	.active {
+		background-color:#069 !important;
+		color:#fff !important;
+	}
+	.farbversionen {
+		padding-top:1em;
+		display:block;
+		clear:both;
+	}
+	.farbversionen img {
+		float:left;
+		width:47.5% !important;
+		margin:1%;
+		padding:0;
+		border:1px solid #ccc;
+
+	}
+	.titlealign img {
+		width:32%; margin-right:1%;
+		border:1px solid #ccc;
+			cursor:pointer !important;
+	}
+	
+	.titlepreview img {
+		width:98%;
+		border:1px solid #ccc;
+
+	}
+	.fontstyles, .menuexplanation, .modulepositions {
+		padding-top:2em;
+		clear:both;
+	}
+	.fontstyles img, .menuexplanation img, .modulepositions img {
+		width:100%;
+		border:1px solid #eee;
+	}
+	
+	 .modulepositions img {
+	 	cursor:pointer !important;
+	 }
+	
+	.alles p { line-height:160% !important;}
+	.alles h1 { padding:0; margin-left:0;}
+	
+	</style>
+	<script type="text/javascript" src="../templates/adana/javascript/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+		$.noConflict();
+ 		
+		jQuery(document).ready(function($) {
+			
+			$('.english').slideDown();			
+				$('.deutsch').slideUp();	
+				
+				$('#btn_en').addClass('active');
+				$('#btn_de').removeClass('active');
+		
+			jQuery('#btn_en').click(function(){
+				$('.english').slideDown();			
+				$('.deutsch').slideUp();	
+				
+				$('#btn_en').addClass('active');
+				$('#btn_de').removeClass('active');
+						
+			});
+			jQuery('#btn_de').click(function(){
+				$('.deutsch').slideDown();
+				$('.english').slideUp();
+	
+				$('#btn_de').addClass('active');
+				$('#btn_en').removeClass('active');
+			});
+			
+			jQuery('.titlealign img').click(function(){
+				$('.titlepreview img').attr('src',$(this).attr('src'));
+			});
+			
+			jQuery('.modulepositions img').toggle(function(){
+				$(this).css({'width':'150%','marginLeft':'-25%'});
+			}, function(){
+				$(this).css({'width':'100%','marginLeft':'0%'});
+			});
+			
+  		});
+	</script>
+	<div style="font-weight:normal;" class="alles">
+	<ul class="languagechoose">
+		<li><a href="#" id="btn_en">English</a></li>
+		<li><a href="#" id="btn_de">Deutsch</a></li>
+	</ul>
+	<div class="english">
+	<h1>Adana (Free Version)</h1>
+	<p>This is the free shareware version of the "Adana" template from <a href="http://www.funky-visions.de" style="text-decoration:underline;">http://www.funky-visions.de</a>.
+	<p>In this free version you are <strong style="color:green;">allowed</strong> to:
+		<ul>
+		<li>- Modify the templates CSS-files</li>
+		<li>- Modify the templates image-files</li>
+		<li>- Use the template for private & commercial websites</li>
+		</ul>
+	</p>
+	<p>
+	Using this free version you are <strong style="color:red;">not allowed</strong> to:
+		<ul>
+			<li>- Remove/Modify/Blur the footer-backlinks to funky-visions.de in any ways. To prevent people from doing this the index.php file is encrypted.</li>
+		</ul>
+	</p>
+	
+	<p>
+	<strong>If you:</strong>
+		<ul>
+			<li>- Like the template or</li>
+			<li>- Need to modify the index.php file or</li>
+			<li>- Want to use the template for a commercial website or</li>
+			<li>- Want to remove the footer-credits linking back to funky-visions then:</li>
+		</ul>
+	</p><p><a href="http://buy.adana.funky-visions.de" style="background-color:#069; color:#fff; padding:0.5em; display:block; text-align:center; text-decoration:underline;">Buy the full version via Paypal or Creditcard for 29,- Euros</a>
+	<br />
+	or <a href="http://www.funky-visions.de/shop.html" style="text-decoration:underline;">visit our shop</a> to use another payment method.
+	</p>
+	<div class="titlepreview">
+	<h1>Title Align</h1>
+	<p>Here you can preview the three types of the header-alignment. To change the alignment choose "Configuration => Title Align" on the right side.</p>
+	<img src="../templates/adana/config/align_left.jpg" /></div>
+	<div class="titlealign">
+		<img src="../templates/adana/config/align_left.jpg" />
+		<img src="../templates/adana/config/align_center.jpg" />
+		<img src="../templates/adana/config/align_right.jpg" />
+	</div>
+	<br/><br/><br/>
+	<div class="farbversionen">
+		<h1>Colorversions</h1>
+		<p>This is the preview of the different color versions: black, brown, red, orange, green, blue, violet & pink. Choose your favorite colour on the right side under "Configuration => Site Color".</p>
+		<img src="../templates/adana/config/black.jpg" />
+		<img src="../templates/adana/config/brown.jpg" />
+		<img src="../templates/adana/config/red.jpg"/>
+		<img src="../templates/adana/config/orange.jpg" />
+		<img src="../templates/adana/config/green.jpg" />
+		<img src="../templates/adana/config/blue.jpg" />
+		<img src="../templates/adana/config/violet.jpg" />
+		<img src="../templates/adana/config/pink.jpg" />
+		
+	</div>
+	<div class="fontstyles"><h1>Font-Styles</h1>
+	<p>Choose between 2 different font-styles: Droid Sans (left) or Droid Serif (right); "Configuration => Font" on the right side of this page.</p>
+		<img src="../templates/adana/config/font_example.jpg" />
+	</div>
+	<div class="menuexplanation">
+	<h1>Top- & Bottom-Menu Subtitles</h1>
+	<img src="../templates/adana/config/subtitle.png" />
+	<p>To add a subtitle to a link of the top- or bottom-menu do/click the following: "Menu" => (Choose a Menu) => (Choose a Link) => "Link Type Options" => "Link Title Attribute" => Enter the Subtitle.</p>
+	</div>
+	<div class="modulepositions">
+		<h1>Modulepositions</h1>
+		<img src="../templates/adana/config/module_positions.png" />
+	</div>
+	</div>
+	<div class="deutsch">
+	<h1>Adana (Kostenlose Version)</h1>
+	<p>Dies ist die kostenlose Shareware-Version des "Adana" templates von <a href="http://www.funky-visions.de" style="text-decoration:underline;">http://www.funky-visions.de</a>.
+	<p>In dieser kostenlosen Version ist es <strong style="color:green;">erlaubt</strong>:
+		<ul>
+		<li>- die CSS-Dateien des Templates zu verändern/auszutauschen</li>
+		<li>- die Bilddateien des Templates zu verändern/auszutauschen</li>
+		<li>- das Template für private als auch kommerzielle Webseiten einzusetzen</li>
+		</ul>
+	</p>
+	<p>
+	<strong style="color:red;">Nicht erlaubt</strong> hingegen ist es:
+		<ul>
+			<li>- Die Footer-Links zurück auf funky-visions.de zu löschen, zu modifizieren oder unkenntlich zu machen - aus diesem Grund ist die index.php Datei verschlüsselt</li>
+		</ul>
+	</p>
+	<p>
+	<strong>Wenn:</strong>
+		<ul>
+			<li>- Ihnen das Template gefällt oder</li>
+			<li>- Sie die index.php Datei des Templates bearbeiten müssen oder</li>
+			<li>- die Footer-Links entfernen möchten dann:</li>
+		</ul>
+	</p><p><a href="http://buy.adana.funky-visions.de" style="background-color:#069; color:#fff; padding:0.5em; display:block; text-align:center; text-decoration:underline;">Kaufen Sie die Vollversion für 29,- Euro via Paypal/Kreditkarte</a>
+	<br />
+	oder <a href="http://www.funky-visions.de/shop.html" style="text-decoration:underline;">besuchen Sie den Shop</a> um andere Zahlungsweisen zu nutzen.
+	</p>
+	<div class="titlepreview">
+	<h1>Ausrichtung der Überschrift</h1>
+	<p>Hier sehen Sie eine Vorschau der 3 verfügbaren Titel-Positionen. Einstellen können Sie die Ausrichtung des Ttiels auf rechts (oben) auf dieser Seite under "Konfiguration-></p>
+	<img src="../templates/adana/config/align_left.jpg" /></div>
+	<div class="titlealign">
+		<img src="../templates/adana/config/align_left.jpg" />
+		<img src="../templates/adana/config/align_center.jpg" />
+		<img src="../templates/adana/config/align_right.jpg" />
+	</div>
+	<br/><br/><br/>
+	<div class="farbversionen">
+		<h1>Colorversions</h1>
+		<p>Das Template bringt von Haus aus 8 verschiedene Farben mit die eingestellt werden können. Schwarz, Braun, Rot, Orange, Grün, Blau, Violett & Pink. Einzustellen rechts, unter "Konfiguration => Farbe".</p>
+		<img src="../templates/adana/config/black.jpg" />
+		<img src="../templates/adana/config/brown.jpg" />
+		<img src="../templates/adana/config/red.jpg"/>
+		<img src="../templates/adana/config/orange.jpg" />
+		<img src="../templates/adana/config/green.jpg" />
+		<img src="../templates/adana/config/blue.jpg" />
+		<img src="../templates/adana/config/violet.jpg" />
+		<img src="../templates/adana/config/pink.jpg" />
+		
+	</div>
+	<div class="fontstyles"><h1>Schrift</h1>
+	<p>Das Template bietet die Auswahl zwischen zwei verschiedenen Schriften. Einer Serifen- (Droid Serif, rechts) & einer serifenlosen Schrift (Droid Sans, links). Auszuwählen rechts unter dem Punkt "Konfiguration => Schrift".</p>
+		<img src="../templates/adana/config/font_example.jpg" />
+	</div>
+	<div>
+	
+	<h1>Top- & Bottom-Menü Untertitel</h1>
+	<img src="../templates/adana/config/subtitle.png" />
+	<p>Untertitel für Menüpunkte des Top- Oder Bottom-Menüs werden folgendermaßen eingestellt: "Menü" => (Menü wählen) => (Link wählen) => "Link Type Optionen" => "Link Title Attribute" => Untertitel eingeben.</p>
+	</div>
+	
+	<div class="modulepositions">
+		<h1>Modul-Positionen</h1>
+		<img src="../templates/adana/config/module_positions.png" />
+	</div>
+	
+	</div>
+	</div>
+	]]>
+	</description>
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<folder>language</folder>
+		<folder>config</folder>
+		<folder>scopbin</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+	</files>
+	
+	<positions>
+		<position>position-2</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-4</position>
+		<position>position-7</position>
+		<position>position-5</position>
+		<position>bottom-1</position>
+		<position>bottom-2</position>
+		<position>bottom-menu</position>
+		
+	</positions>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_adana.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_adana.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.tpl_adana.ini</language>
+		<language tag="de-DE">de-DE/de-DE.tpl_adana.sys.ini</language>
+	</languages>
+	
+	<config>
+	<fields name="params">
+		<fieldset name="basic_configuration" label="TPL_ADANA_SITE_DETAILS">
+			<field name="sitetitle"  type="text" default=""
+					label="TPL_ADANA_FIELD_SITETITLE_LABEL"
+					description="TPL_ADANA_FIELD_SITETITLE_DESCRIPTION"
+					filter="string" />
+			<field name="siteslogan"  type="text" default=""
+					label="TPL_ADANA_FIELD_SITESLOGAN_LABEL"
+					description="TPL_ADANA_FIELD_SITESLOGAN_DESCRIPTION"
+					filter="string" />
+			<field name="copyright"  type="text" default=""
+					label="TPL_ADANA_FIELD_COPYRIGHT_LABEL"
+					description="TPL_ADANA_FIELD_COPYRIGHT_DESCRIPTION"
+					filter="string" />
+		</fieldset>
+		<fieldset name="configuration" label="TPL_ADANA_CONFIGURATION">
+			<field name="titlealign" type="list" default="center"
+					label="TPL_ADANA_FIELD_TITLEALIGN_LABEL"
+					description="TPL_ADANA_FIELD_TITLEALIGN_DESCRIPTION"
+					filter="word">
+					<option value="left">TPL_ADANA_FIELD_TITLEALIGN_LEFT</option>
+					<option value="center">TPL_ADANA_FIELD_TITLEALIGN_CENTER</option>
+					<option value="right">TPL_ADANA_FIELD_TITLEALIGN_RIGHT</option>
+			</field>
+			
+			<field name="logo" type="media" default=""
+					label="TPL_ADANA_FIELD_LOGO_LABEL"
+					description="TPL_ADANA_FIELD_LOGO_DESCRIPTION" />
+			<field name="titleshow" type="list" default="show"
+					label="TPL_ADANA_FIELD_TITLESHOW_LABEL"
+					description="TPL_ADANA_FIELD_TITLESHOW_DESCRIPTION"
+					filter="word">
+					<option value="show">TPL_ADANA_FIELD_TITLESHOW_SHOW</option>
+					<option value="hide">TPL_ADANA_FIELD_TITLESHOW_HIDE</option>
+			</field>					
+			<field name="font" type="list" default="sans"
+					label="TPL_ADANA_FIELD_FONT_LABEL"
+					description="TPL_ADANA_FIELD_FONT_DESCRIPTION"
+					filter="word">
+					<option value="Sans">Droid Sans</option>
+					<option value="Serif">Droid Serif</option>
+			</field>
+			<field name="color" type="list" default="blue"
+					label="TPL_ADANA_FIELD_COLOR_LABEL"
+					description="TPL_ADANA_FIELD_COLOR_DESCRIPTION"
+					filter="word">
+					<option value="red">TPL_ADANA_FIELD_COLOR_RED</option>
+					<option value="orange">TPL_ADANA_FIELD_COLOR_ORANGE</option>
+					<option value="green">TPL_ADANA_FIELD_COLOR_GREEN</option>
+					<option value="blue">TPL_ADANA_FIELD_COLOR_BLUE</option>
+					<option value="violet">TPL_ADANA_FIELD_COLOR_VIOLET</option>
+					<option value="black">TPL_ADANA_FIELD_COLOR_BLACK</option>
+					<option value="brown">TPL_ADANA_FIELD_COLOR_BROWN</option>
+					<option value="pink">TPL_ADANA_FIELD_COLOR_PINK</option>
+			</field>
+		</fieldset>
+	</fields>
+	</config>
+</extension>
