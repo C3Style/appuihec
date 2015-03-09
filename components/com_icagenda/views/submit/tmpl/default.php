@@ -733,7 +733,7 @@ else
 		if(!JFactory::getApplication()->get('jquery')){
 			JFactory::getApplication()->set('jquery',true);
 			$document = JFactory::getDocument();
-			$document->addScript("http://ajax.googleapis.com/ajax/libs/jquery/jquery-latest.js");
+			$document->addScript(JURI::root(true)."/libraries/jquery/jquery-2.1.3.min.js");
 		}
 
 		// Change jQuery UI version from 1.9.2 to 1.8.23 (joomla version, but not complete) to prevent a conflict in tooltip that appeared since Joomla 3.1.4

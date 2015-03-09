@@ -245,7 +245,7 @@ class plgSystemJsn_System extends JPlugin
 			if(!JFactory::getApplication()->get('jquery')){
 				JFactory::getApplication()->set('jquery',true);
 				$document = JFactory::getDocument();
-				$document->addScript("http://ajax.googleapis.com/ajax/libs/jquery/jquery-latest.js");
+				$document->addScript(JURI::root(true)."/libraries/jquery/jquery-2.1.3.min.js");
 			}
 			$doc = JFactory::getDocument();
 			$doc->addStylesheet(JURI::root().'components/com_jsn/assets/css/style.css');
@@ -259,7 +259,7 @@ class plgSystemJsn_System extends JPlugin
 			if(!JFactory::getApplication()->get('jquery')){
 				JFactory::getApplication()->set('jquery',true);
 				$document = JFactory::getDocument();
-				$document->addScript("http://ajax.googleapis.com/ajax/libs/jquery/jquery-latest.js");
+				$document->addScript(JURI::root(true)."/libraries/jquery/jquery-2.1.3.min.js");
 			}
 			$doc = JFactory::getDocument();
 			$db=JFactory::getDbo();
